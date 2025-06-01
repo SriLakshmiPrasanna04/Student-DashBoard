@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>School Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f7f7fb;
+    }
+
+    .sidebar {
+      position: fixed;
+      width: 300px;
+      height: 100vh;
+      background: linear-gradient(to bottom, #34da2e, #8de752);
+      padding: 20px;
+      float: left;
+      color: white;
+    }
+
+    .sidebar h2 {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .sidebar a {
+      display: block;
+      margin: -6px;
+      width: fit-content;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.3);
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .main {
+      margin-left: 350px;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .main h1 {
+      color: #4caf50;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #333;
+    }
+
+    .card p {
+      font-size: 24px;
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2>School Dashboard</h2>
+    <a href="#">Dashboard</a>
+    <a href="#">Students</a>
+    <a href="#">Teachers</a>
+    <a href="#">Classes</a>
+    <a href="#">Exams</a>
+    <a href="#">Library</a>
+    <a href="#">Settings</a>
+  </div>
+
+  <div class="main">
+    <h1>Welcome to the School Dashboard</h1>
+    <div class="cards">
+      <div class="card">
+        <h3>Total Students</h3>
+        <p>500</p>
+      </div>
+      <div class="card">
+        <h3>Total Teachers</h3>
+        <p>50</p>
+      </div>
+      <div class="card">
+        <h3>Classes</h3>
+        <p>20</p>
+      </div>
+      <div class="card">
+        <h3>Upcoming Exams</h3>
+        <p>5</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
